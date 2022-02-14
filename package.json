@@ -1,0 +1,26 @@
+{
+  "name": "react-kondig",
+  "version": "1.0.0",
+  "description": "Crisp",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "jest": "^27.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
