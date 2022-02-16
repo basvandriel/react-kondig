@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@swc/core': ^1.2.139
+  '@swc/jest': ^0.2.17
   '@testing-library/react': ^12.1.2
   '@testing-library/react-hooks': ^7.0.2
   '@types/jest': ^27.4.0
@@ -17,6 +19,8 @@ dependencies:
   zustand: 3.7.0_react@17.0.2
 
 devDependencies:
+  '@swc/core': 1.2.139
+  '@swc/jest': 0.2.17_@swc+core@1.2.139
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
   '@types/jest': 27.4.0
@@ -440,6 +444,13 @@ packages:
       - utf-8-validate
     dev: true
 
+  /@jest/create-cache-key-function/27.5.1:
+    resolution: {integrity: sha512-dmH1yW+makpTSURTy8VzdUwFnfQh1G8R+DxO2Ho2FFmBbKFEVm+3jWdvFhE2VqB/LATCTokkP0dotjyQyw5/AQ==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      '@jest/types': 27.5.1
+    dev: true
+
   /@jest/environment/27.5.1:
     resolution: {integrity: sha512-/WQjhPJe3/ghaol/4Bq480JKXV/Rfw8nQdN7f41fM8VDHLcxKXou6QyXAh3EFr9/bVG3x74z1NWDkP87EiY8gA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -600,6 +611,152 @@ packages:
     resolution: {integrity: sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==}
     dependencies:
       '@sinonjs/commons': 1.8.3
+    dev: true
+
+  /@swc/core-android-arm-eabi/1.2.139:
+    resolution: {integrity: sha512-ceZNzueo6iazeO9b8txKFk/v1MOmHuCm53Cv0SMJdtEBLIs6GqpLnPzRBswnQEdL4Ge+EGD5YRtw3mAdSLcTzQ==}
+    engines: {node: '>=10'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-android-arm64/1.2.139:
+    resolution: {integrity: sha512-94kdkt+1zWJbxavSlTkTbTIklKjNByiCGYf920a/D5Nb0cuRXUHfxVPToHhzetFRMoNfnQPVhL3Wid/Gt02tBw==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-darwin-arm64/1.2.139:
+    resolution: {integrity: sha512-l3C6ItB4OX1QEART1TnaUNzHeviDinbRQQZKJI8xo23HnhV0pvDjYl0D62R+1/7e8KiSweEG8BuKEtXPEYCBlw==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-darwin-x64/1.2.139:
+    resolution: {integrity: sha512-4KMTARit3LiJ+IZtxRAfiv7V7rrqryIxs+uZJmOfjenGIp3A+ygYzbm9PT/wfRiefL9Ds1nLBSAA1tQ6jiwObA==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-freebsd-x64/1.2.139:
+    resolution: {integrity: sha512-qZFIV98J7IS692JSSsTWmhBB9jVv0zmqHm+65xAblitlZ06wyFpOF7cLBuJQPdEXxrmoD3z6skD879U5q89NGw==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm-gnueabihf/1.2.139:
+    resolution: {integrity: sha512-DX/yRuOrDRoddvofDgbuXmJXFHtGL+M0TgQll+7M2bW293jTGT1D1dkQuTQ/oxiVyA5bXShm+/Rrh8ozNf/ieA==}
+    engines: {node: '>=10'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm64-gnu/1.2.139:
+    resolution: {integrity: sha512-ScLMFY121bzO4yOALxHlHut8Gj/cfJ74NL0JOzwtzL4lUJ1wkgmkHFJQNn5gXXrkTcfKR7o9D00R0WsbCfJGYA==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm64-musl/1.2.139:
+    resolution: {integrity: sha512-uSdVTMkBJtkfgKBAQxMz+lV/Kjx2IggWG1G57NIHJGNE2NMTBvpynjljLrL8jVBPAWxks4qANSsN4yixPmw7LA==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-x64-gnu/1.2.139:
+    resolution: {integrity: sha512-qpD9HQB50zZRIB/i21RjThUk7FRo7tLiHjcnSxZBnPcPYTM5sdzatrnO6b5/NnKngM1HW75OfJ1tvyccrU3Ufg==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-x64-musl/1.2.139:
+    resolution: {integrity: sha512-ILm4Z+StN+spNrhA6P6m9lXkmU0Ban4GeWaI2ErslyTFNaybQiwKlXlCNmsylzKlpEQd4nCpYy3vIFoeOoyJlQ==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-arm64-msvc/1.2.139:
+    resolution: {integrity: sha512-hIckLZ08lqWlHdJyFQG4tZCMdnvqqBQTB/6FYUU0pWB5bTMIixFfMV8XytWZJinNgXVgi6PApU4IHbWksUrHdg==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-ia32-msvc/1.2.139:
+    resolution: {integrity: sha512-rN5XmVXW+Y/GZ/5FiV99R/0QejuN6YwDH/LoiEE85I8ytbLPBlpL2yhSe48BPhSeHgAwLpgeaK2NOKSeuhsHrA==}
+    engines: {node: '>=10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-x64-msvc/1.2.139:
+    resolution: {integrity: sha512-N1zvgp/xlSEgi6msYI2zkyY/B9RlIuLjuyUu5VmFY6dylCwwukCHu6Vi6kYYKEtNoZCGWvSCgKbg87TMydetxQ==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core/1.2.139:
+    resolution: {integrity: sha512-VlISQI7H6kIJT0Hhl6UVEOAb1HcuqWCnsoMHxVGdEQZlxt8g+ggyrY7F4AZoTvfgnSEayeIdpV8Xq52Zg+zjYw==}
+    engines: {node: '>=10'}
+    optionalDependencies:
+      '@swc/core-android-arm-eabi': 1.2.139
+      '@swc/core-android-arm64': 1.2.139
+      '@swc/core-darwin-arm64': 1.2.139
+      '@swc/core-darwin-x64': 1.2.139
+      '@swc/core-freebsd-x64': 1.2.139
+      '@swc/core-linux-arm-gnueabihf': 1.2.139
+      '@swc/core-linux-arm64-gnu': 1.2.139
+      '@swc/core-linux-arm64-musl': 1.2.139
+      '@swc/core-linux-x64-gnu': 1.2.139
+      '@swc/core-linux-x64-musl': 1.2.139
+      '@swc/core-win32-arm64-msvc': 1.2.139
+      '@swc/core-win32-ia32-msvc': 1.2.139
+      '@swc/core-win32-x64-msvc': 1.2.139
+    dev: true
+
+  /@swc/jest/0.2.17_@swc+core@1.2.139:
+    resolution: {integrity: sha512-n/g989+O8xxMcTZnP0phDrrgezGZBQBf7cX4QuzEsn07QkWbqmMsfaCxdF0kzajXublXWJ8yk5vRe3VNk1tczA==}
+    engines: {npm: '>= 7.0.0'}
+    peerDependencies:
+      '@swc/core': '*'
+    dependencies:
+      '@jest/create-cache-key-function': 27.5.1
+      '@swc/core': 1.2.139
     dev: true
 
   /@testing-library/dom/8.11.3:

@@ -4,11 +4,13 @@
   "description": "Crisp",
   "main": "index.js",
   "scripts": {
-    "test": "jest test --maxWorkers=1"
+    "test": "jest test --runInBand"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@swc/core": "^1.2.139",
+    "@swc/jest": "^0.2.17",
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "^27.4.0",

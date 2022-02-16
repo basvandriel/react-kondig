@@ -1,9 +1,5 @@
 import create from "zustand";
-
-interface State {
-    q: string[]
-    nq: (value: string) => void 
-}
+import State from './QueueableState'
 
 export default create<State>((set) => ({
     /**
@@ -12,10 +8,15 @@ export default create<State>((set) => ({
     q: [],
 
     /**
-     * Removes a notification from the list
+     * Adds a notification too the queue
      * 
      * @param value 
      * @returns 
      */
-    nq: (value: string) => set(({ q: queue }) => ({ q: [...queue, value] }))
+    nq: (value: string) => set(({ q: queue }) => ({ q: [...queue, value] })),
+
+    /**
+     * Removes a notification from the list
+     */
+    dq: (value: string) => set(({ q }) => ({ q: q.filter(n => value !== n) })),
 }))
