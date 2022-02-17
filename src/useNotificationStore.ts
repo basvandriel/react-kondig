@@ -25,5 +25,5 @@ export default create<State>((set) => ({
     /**
      * Removes all notifications
      */
-    rm: () => set(({ q }) => ({ q: []}))
+    rm: () => set(_ => ({ q: []}))
 }))
