@@ -1,6 +1,8 @@
 import create from "zustand";
 import State from './QueueableState'
 
+import { Notification } from "./QueueableState";
+
 export default create<State>((set) => ({
     /**
      * The notification queue
@@ -13,10 +15,15 @@ export default create<State>((set) => ({
      * @param value 
      * @returns 
      */
-    nq: (value: string) => set(({ q: queue }) => ({ q: [...queue, value] })),
+    nq: (n: Notification) => set(({ q: queue }) => ({ q: [...queue, n] })),
 
     /**
      * Removes a notification from the list
      */
-    dq: (value: string) => set(({ q }) => ({ q: q.filter(n => value !== n) })),
+    dq: (id: string) => set(({ q }) => ({ q: q.filter(n => id !== n.id) })),
+
+    /**
+     * Removes all notifications
+     */
+    rm: () => set(({ q }) => ({ q: []}))
 }))

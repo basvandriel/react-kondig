@@ -10,5 +10,5 @@ it('should workas a hook', () => {
     })
 
     const store = renderHook(() => useNotificationStore())
-    expect(store.result.current.q[0]).toBe('Kaassaus')
+    expect(store.result.current.q[0].value).toBe('Kaassaus')
 })

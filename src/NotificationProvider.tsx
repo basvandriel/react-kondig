@@ -7,7 +7,7 @@ const NotificationProvider = () => {
 
     return (
         <>
-            {queue.map((v, i) => <span key={i}>{v}</span>)}
+            {queue.map((v, i) => <span key={i}>{v.value}</span>)}
         </>
     )
 }
